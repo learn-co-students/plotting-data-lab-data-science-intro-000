@@ -132,8 +132,8 @@ Assign the variable `text_values` equal to a list of names for the first three c
 
 
 ```python
-text_values = []
-bar_trace_first_three_pops = {'type': 'scatter', 'text': text_values}
+text_values = [cities[0]['City'], cities[1]['City'], cities[2]['City']] #or x_values as per above
+bar_trace_first_three_pops = {'type': 'bar', 'x': x_values, 'y': y_values, 'text': text_values}
 ```
 
 
@@ -152,8 +152,9 @@ Ok, now let's plot two different traces side by side.  First, create another tra
 
 
 ```python
-bar_trace_first_three_areas = {'type': 'scatter', 'x': [], 'y': [], 'text': []}
-bar_trace_first_three_pops = {'type': 'scatter', 'x': [], 'y': [], 'text': []}
+areas_y_variable = [cities[0]['Area'], cities[1]['Area'],cities[2]['Area']] # Creates a new y-axis variable
+bar_trace_first_three_areas = {'type': 'bar', 'x': x_values, 'y': areas_y_values, 'text': text_values}
+bar_trace_first_three_pops = {'type': 'bar', 'x': x_values, 'y': y_values, 'text': text_values}
 ```
 
 
