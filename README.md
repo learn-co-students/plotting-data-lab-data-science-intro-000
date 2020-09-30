@@ -166,4 +166,4 @@ Finally, we display our trace with a call to the following method:
 
     plotly.offline.iplot([trace])
     
-Easy peasy, quick and easy!
+Easy peasy, quick and easy.
